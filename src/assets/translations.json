@@ -1,0 +1,47 @@
+{
+  "en": {
+    "welcome_title": "Welcome to UDoChain",
+    "welcome_desc": "Validate, sign, trace, and vote with blockchain-level security — all in one simple platform.",
+    "cta_login": "Login",
+    "cta_register": "Register",
+    "login_title": "Log in",
+    "register_title": "Create your account",
+    "email": "Email",
+    "password": "Password",
+    "continue": "Continue",
+    "name": "Username (8 chars, A–Z, a–z, 0–9)",
+    "no_account": "Don’t have an account?",
+    "have_account": "Already have an account?",
+    "purchase_credits": "Purchase Credits"
+  },
+  "es": {
+    "welcome_title": "Bienvenido a UDoChain",
+    "welcome_desc": "Valida, firma, traza y vota con seguridad a nivel blockchain — todo en una sola plataforma.",
+    "cta_login": "Iniciar sesión",
+    "cta_register": "Regístrate",
+    "login_title": "Iniciar sesión",
+    "register_title": "Crea tu cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "continue": "Continuar",
+    "name": "Nombre de usuario (8 caracteres, A–Z, a–z, 0–9)",
+    "no_account": "¿No tienes una cuenta?",
+    "have_account": "¿Ya tienes una cuenta?",
+    "purchase_credits": "Comprar créditos"
+  },
+  "pt": {
+    "welcome_title": "Bem-vindo ao UDoChain",
+    "welcome_desc": "Valide, assine, rastreie e vote com segurança de nível blockchain — tudo em uma plataforma.",
+    "cta_login": "Entrar",
+    "cta_register": "Registrar",
+    "login_title": "Entrar",
+    "register_title": "Criar conta",
+    "email": "E-mail",
+    "password": "Senha",
+    "continue": "Continuar",
+    "name": "Nome de usuário (8 caracteres)",
+    "no_account": "Não tem uma conta?",
+    "have_account": "Já tem uma conta?",
+    "purchase_credits": "Comprar créditos"
+  }
+}
