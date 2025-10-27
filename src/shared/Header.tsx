@@ -1,36 +1,32 @@
-import { Link, NavLink, useLocation } from 'react-router-dom'
-import { clsx } from 'clsx'
-
-const nav = [
-  { to: '/', label: 'Home' },
-  { to: '/dashboard', label: 'Dashboard' },
-  { to: '/payments', label: 'Payments' }
-]
+// app-udo/src/shared/Header.tsx
+import { Link } from "react-router-dom";
 
 export default function Header() {
-  const { pathname } = useLocation()
   return (
-    <header className="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-gray-950/60 border-b border-gray-200 dark:border-gray-800">
-      <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg bg-brand/10 flex items-center justify-center text-brand font-bold">U</div>
-          <span className="font-semibold">UDoChain</span>
+    <header className="sticky top-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b border-gray-200 dark:border-gray-700">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Logo UDoChain */}
+        <Link to="/" className="flex items-center gap-3">
+          <img
+            src="/images/logo-udochain.png"
+            alt="UDoChain Logo"
+            className="h-10 w-10 object-contain drop-shadow-sm"
+          />
+          <span className="font-semibold text-udo-primary dark:text-white tracking-tight">
+            UDoChain
+          </span>
         </Link>
-        <nav className="hidden sm:flex items-center gap-6">
-          {nav.map(i => (
-            <NavLink key={i.to} to={i.to}
-              className={clsx('text-sm', pathname===i.to ? 'text-brand font-medium' : 'text-gray-600 dark:text-gray-300')}>
-              {i.label}
-            </NavLink>
-          ))}
-        </nav>
-        <div className="flex items-center gap-3">
-          <Link to="/login" className={clsx('btn px-3 py-1.5 text-sm', pathname==='/login'?'bg-brand text-white':'bg-gray-100 dark:bg-gray-800')}>
+
+        {/* Navegación */}
+        <nav className="text-sm text-gray-700 dark:text-gray-300 flex items-center gap-4">
+          <Link to="/login" className="hover:text-udo-primary">
             Login
           </Link>
-          <Link to="/register" className="btn btn-primary text-sm">Sign up</Link>
-        </div>
+          <Link to="/register" className="hover:text-udo-primary">
+            Register
+          </Link>
+        </nav>
       </div>
     </header>
-  )
+  );
 }
